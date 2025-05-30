@@ -27,7 +27,7 @@ function addItemToScrolls(input) {
     HorizontalText.forEach((scrollItem) => {
       const textItem = document.createElement("span");
       textItem.classList.add("text");
-      textItem.innerHTML = input;
+      textItem.innerHTML = " " + input + " ";
       scrollItem.appendChild(textItem);
       console.log(input);
     });
