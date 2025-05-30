@@ -18,8 +18,9 @@
         <div class="nav-container">
             <nav class="nav-style">
                 <a href="#Home">Home</a>
-                <a href="#Project1">Project 1</a>
-                <a href="#Project2">Project 2</a>
+                <a id="projectbtn" data-id="1" href="#Home">Project 1</a>
+                <a id="projectbtn" data-id="2" href="#Home">Project 2</a>
+                <a id="projectbtn" data-id="3" href="#Home">Project 3</a>
             </nav>
             <div class="nav-style" id="contact-button">
                 <a a href="#Contact">Contact</a>
@@ -96,11 +97,32 @@
                 </div>
             </div>
         </section>
+        <div class="container" id="container">
+            <div class="close fade" id="close">&#128942;</div>
+			<div class="Slide fade">
+				<div class="numbertext">1/3</div>
+				<img src="images/img1.jpg">
+				<div class="textlabel">Project 1</div>
+			</div>
+			<div class="Slide fade">
+				<div class="numbertext">2/3</div>
+				<img src="images/img2.jpg">
+				<div class="textlabel">Project 2</div>
+			</div>
+			<div class="Slide fade">
+				<div class="numbertext">3/3</div>
+				<img src="images/img3.jpg">
+				<div class="textlabel">Project 3</div>
+			</div>
+			<a class="prev" data-id="-1" id="arrow">&#10094;</a>
+			<a class="next" data-id="1" id="arrow">&#10095;</a>			
+		</div>
         <footer>
             <p>@2025</p>
         </footer>
     </div>
     <script src="javascript.js"></script>
+    <div class="overlay" id="overlay"></div>
 </body>
 
 </html>
