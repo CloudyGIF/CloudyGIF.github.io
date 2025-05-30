@@ -22,7 +22,10 @@
     width: 100%;
  }
 
-
+.text {
+    font-size: 20px;
+    color: white;
+}
 
  .nav-container {
     margin: auto;
@@ -150,6 +153,54 @@ section{
     
 
 
+}
+
+.ribbon {
+   
+height: 100%;
+flex: 1;
+padding: 10px;
+flex-grow: 1;
+overflow: hidden;
+}
+
+.rowtext {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.text-scroll {
+    display: inline-flex;
+    flex-shrink: 0;
+    align-items: center;
+    color: white;
+    padding-left: 30px;
+    font-size: 20px;
+    font-family: var(--mainfont);
+}
+
+.scroll {
+    display: flex;
+  animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+.stack-container {
+    display: flex;
+    height: 5%;
+    position: absolute;
+    top: 24%;
+    width: 100%;
 }
 
 .about-contact{
